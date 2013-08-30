@@ -1,6 +1,6 @@
 #ft
 
-Refuel script
+Fueling script. Put your turtle in front of a charging unit, and it'll charge to the level you want. Don't put anything on top of the turtle or else it won't be able to move.
 
 #m
 
