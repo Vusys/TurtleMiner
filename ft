@@ -1,0 +1,10 @@
+local tArgs = {...}
+
+while true do
+	print ( turtle.getFuelLevel() );
+	sleep( 1 );
+	if turtle.getFuelLevel() > tonumber(tArgs[1]) then
+		turtle.up();
+		break;
+	end
+end
