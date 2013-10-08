@@ -31,9 +31,9 @@ Restarts `m` if the server is restarted (hopefully).
 
 Quick and dirty script to initialise the turtle. You need to put the scripts on pastebin yourself and change the pastebin IDs with them. With it, you can get a turtle going in under a minute:
 
-1) Put down an enterchest then put your turtle on top.
-2) Run `pastebin get PASTEBIN_ID init`
-3) Run `init`
-4) Put in your fuel and run `ft`
-5) Put in three pieces of TNT into slot 2.
-6) Run `m`, and the turtle will pick up the chest putting it into slot one and then go off on a mining adventure!
+1) Put down an enterchest then put your turtle on top.   
+2) Run `pastebin get PASTEBIN_ID init`.   
+3) Run `init`.    
+4) Put in your fuel and run `ft`.   
+5) Put in three pieces of TNT into slot 2.   
+6) Run `m`, and the turtle will pick up the chest putting it into slot one and then go off on a mining adventure!   
