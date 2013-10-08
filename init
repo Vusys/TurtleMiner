@@ -1,0 +1,12 @@
+-- miner
+shell.run("pastebin", "get", "PASTEBIN_ID", "m")
+
+--startup
+shell.run("pastebin", "get", "PASTEBIN_ID", "startup")
+
+--refuel
+shell.run("pastebin", "get", "PASTEBIN_ID", "ft")
+
+--label
+shell.run("label", "set", math.random(1000))
+

@@ -26,27 +26,39 @@ end
 
 phone_home('Hello World!')
 
+-- Pick up ender chest
+turtle.select(1)
+turtle.digDown()
+
 while true do
 
-	for x = 1, 96 do
+	for x = 1, 64 do
 	
-		if turtle.getFuelLevel() == 0 then
+		if turtle.getFuelLevel() <= 60 then
 			phone_home('Self destructing now')
 			dump_to_ender()
+
+			while turtle.down() do
+				turtle.down()
+			end
+
+			tutle.up()
+			turtle.digUp()
 			turtle.digDown()
 			turtle.dig()
 			turtle.select(2)
+			turtle.placeUp()
 			turtle.placeDown()
 			turtle.place()
 			redstone.setOutput("bottom", true)
 			redstone.setOutput("front", true)
 		end
 	
-		while turtle.detect() do
-			turtle.digDown()
+		while turtle.detect() or turtle.detectDown() or turtle.detectUp() do
 			turtle.dig()
+			turtle.digUp()
+			turtle.digDown()
 			sleep(0.5) --wait for falling sand/ gravel
-			--print ("Digging front")
 		end
 		
 		while turtle.forward() == false do

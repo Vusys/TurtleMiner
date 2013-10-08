@@ -1,10 +1,6 @@
-local tArgs = {...}
-
-while true do
-	print ( turtle.getFuelLevel() );
-	sleep( 1 );
-	if turtle.getFuelLevel() > tonumber(tArgs[1]) then
-		turtle.up();
-		break;
-	end
+for x = 1, 16 do
+	turtle.select(x)
+	turtle.refuel(64)
 end
+
+print ("Fuel: ", turtle.getFuelLevel())
